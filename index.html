@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="build/main.css" />
+    <title>Js Pomodoro Clock</title>
+  </head>
+  <body>
+    <div class="clock">
+      <div class="clock__header">
+        <h1 class="text text--style-header text--theme-white text--s-large">Pomodoro Clock</h1>
+      </div>
+      <div class="clock__body">
+        <div id="session-length" class="clock__body__session-length">
+          <div class="clock__body__session-length__header">
+            <h2 class="text text--theme-white text--style-body text--s-medium">Session length</h2>
+          </div>
+          <div class="clock__body__session-length__body">
+            <div class="clock__body__session-length__body__item">
+              <span class="text text--theme-white text--size-medium text--style-body" id="lower-session-length">-</span>
+            </div>
+            <div class="clock__body__session-length__body__item">
+              <span class="text text--theme-white text--size-medium text--style-body" id="minutes"></span>
+            </div>
+            <div class="clock__body__session-length__body__item">
+              <span class="text text--theme-white text--size-medium text--style-body" id="increase-session-length">+</span>
+            </div>
+          </div>
+        </div>
+        <div id="pomodoro" class="clock__body__box">
+          <div class="clock__body__box__pomodoro">
+            <div class="clock__body__box__pomodoro__decoration">
+              <div class="clock__body__box__pomodoro__decoration__item">
+              </div>
+            </div>
+            <div class="clock__body__box__timer-box">
+              <span class="text text--style-header text--theme-yellow text--size-large text--s-large" id="timer">Start Pomodoro!</span>
+            </div>
+          </div>
+        </div>
+        <div id="reset" class="clock__body__reset">
+          <span class="text text--theme-white text--size-medium text--style-body text--s-medium">RESET</span>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

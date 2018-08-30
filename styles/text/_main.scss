@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+.text {
+  user-select: none;
+}
+
+// Size
+
+.text {
+
+  &--size-small {
+    font-size: 10px;
+  }
+
+  &--size-medium {
+    font-size: 20px;
+  }
+
+  &--size-large {
+    font-size: 30px;
+  }
+}
+
+
+//Themes
+
+.text {
+
+  &--theme-white {
+    color: #fff;
+  }
+
+  &--theme-yellow {
+    color:  #ffff00;
+  }
+}
+
+// Styles
+
+.text {
+
+  &--style-header {
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  &--style-body {
+    font-family: 'Merriweather', serif;
+  }
+}
+
+// Media Queries
+
+@media (max-width: 748px) {
+  .text {
+
+    &--s-small {
+      font-size: 10px;
+    }
+
+    &--s-medium {
+      font-size: 15px;
+    }
+
+    &--s-large {
+      font-size: 20px;
+    }
+  }
+}

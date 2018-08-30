@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Paytone+One");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.text--size-small {
+  font-size: 10px;
+}
+.text--size-medium {
+  font-size: 20px;
+}
+.text--size-large {
+  font-size: 30px;
+}
+
+.text--theme-white {
+  color: #fff;
+}
+.text--theme-yellow {
+  color: #ffff00;
+}
+
+.text--style-header {
+  font-family: 'Paytone One', sans-serif;
+  letter-spacing: 2px;
+}
+.text--style-body {
+  font-family: 'Merriweather', serif;
+}
+
+@media (max-width: 748px) {
+  .text--s-small {
+    font-size: 10px;
+  }
+  .text--s-medium {
+    font-size: 15px;
+  }
+  .text--s-large {
+    font-size: 20px;
+  }
+}
+.clock {
+  display: table;
+  width: 100%;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+}
+.clock__body__session-length {
+  margin-top: 50px;
+}
+.clock__body__session-length__body {
+  display: table;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+.clock__body__session-length__body__item {
+  display: inline-block;
+}
+.clock__body__session-length__body__item :not(#minutes) {
+  cursor: pointer;
+}
+.clock__body__session-length__body__item:not(:last-of-type) {
+  margin-right: 30px;
+}
+.clock__body__box {
+  display: table;
+  position: relative;
+  margin: auto;
+  padding: 30px;
+  cursor: pointer;
+}
+.clock__body__box__pomodoro {
+  position: relative;
+  left: -17px;
+  width: 250px;
+  height: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ff0000;
+  -webkit-box-shadow: inset 5px 5px 20px 0px #690000;
+          box-shadow: inset 5px 5px 20px 0px #690000;
+  z-index: 1;
+}
+.clock__body__box__pomodoro::before {
+  content: " ";
+  position: absolute;
+  left: 34px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  -webkit-box-shadow: inset 0px 24px 19px -21px #690000;
+          box-shadow: inset 0px 24px 19px -21px #690000;
+  z-index: 0;
+}
+.clock__body__box__pomodoro__decoration {
+  position: relative;
+}
+.clock__body__box__pomodoro__decoration__item {
+  position: relative;
+  top: -3px;
+  margin: auto;
+  width: 50px;
+  height: 60px;
+  background-color: #a0de21;
+  border-radius: 60px 0;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+.clock__body__box__pomodoro__decoration__item::before {
+  content: " ";
+  position: absolute;
+  top: -11px;
+  right: 22px;
+  width: 50px;
+  height: 60px;
+  background-color: #a0de21;
+  border-radius: 60px 0;
+  -webkit-transform: rotate(32deg);
+          transform: rotate(32deg);
+}
+.clock__body__box__pomodoro__decoration__item::after {
+  content: " ";
+  position: absolute;
+  top: 10px;
+  left: 32px;
+  width: 50px;
+  height: 60px;
+  background-color: #a0de21;
+  border-radius: 60px 0;
+  -webkit-transform: rotate(-48deg);
+  transform: rotate(-65deg);
+}
+.clock__body__box__timer-box {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  z-index: 3;
+  cursor: pointer;
+}
+.clock__body__reset {
+  display: table;
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3 ease;
+  transition: -webkit-transform 0.3 ease;
+  transition: transform 0.3 ease;
+  transition: transform 0.3 ease, -webkit-transform 0.3 ease;
+}
+.clock__body__reset:active {
+  -webkit-transform: translate(0px, 4px);
+          transform: translate(0px, 4px);
+}
+
+@media (max-width: 768px) {
+  .clock {
+    margin-top: 20px;
+  }
+  .clock__body__session-length {
+    margin-top: 30px;
+  }
+  .clock__body__box {
+    padding: 20px 30px;
+  }
+  .clock__body__box__pomodoro {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .clock__body__box__pomodoro::before {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .clock__body__reset {
+    margin-top: 15px;
+  }
+}
+body {
+  background-color: #000;
+}
+
+/*# sourceMappingURL=main.css.map */
